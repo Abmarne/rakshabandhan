@@ -1,0 +1,209 @@
+/* Importing Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f4c2c2, #d9e3f0);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #ffb3b3, #ffd1a9);
+    padding: 40px 20px;
+    border-bottom: 2px solid #ff9999;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Container Styling */
+.title-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styling */
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8em;
+    margin: 0;
+    background: linear-gradient(45deg, #ff6b6b, #ffca3a);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: fadeInTitle 2s ease-in-out;
+}
+
+/* Rakhi Graphic Styling */
+.rakhi-graphic {
+    width: 120px;
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation for Title */
+@keyframes fadeInTitle {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animation for Floating Effect */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+
+/* Personal Message Styling */
+.personal-message {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.personal-message p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* Photo Gallery Styling */
+.photo-gallery {
+    margin-bottom: 30px;
+}
+
+/* Carousel Styling */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    padding: 15px;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
+    margin: 0 auto;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Memory Lane Styling */
+.memory-lane {
+    margin-bottom: 30px;
+}
+
+/* Timeline Section Styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px;
+    width: 80%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Rakhi Maker Section Styling */
+.rakhi-maker {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Download Link Button Styling */
+.download-link {
+    display: inline-block;
+    background-color: #ff9999;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 15px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #ff6666;
+    transform: translateY(-3px);
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-In Animation */
+.slide-in {
+    transform: translateX(-100%);
+    animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Hover Effects for Carousel Images */
+.carousel img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Bouncing Animation for Icons */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.icon-bounce {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
